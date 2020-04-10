@@ -21,7 +21,7 @@ app.post("/repositories", (request, response) => {
     id: uuid(),
     title,
     url,
-    techs: techs.split(","),
+    techs,
     likes: 0,
   };
 
@@ -46,7 +46,7 @@ app.put("/repositories/:id", (request, response) => {
     id,
     title,
     url,
-    techs: techs.split(","),
+    techs,
     likes,
   };
 
